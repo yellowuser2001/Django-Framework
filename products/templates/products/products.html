@@ -61,7 +61,7 @@
                     <div class="card h-100">
                         <a href="#">
                             <img class="card-img-top"
-                                 src= {% static product.image %}
+                                 src= "{{ product.image.url }}"
                                  alt="">
                         </a>
                         <div class="card-body">
@@ -108,6 +108,3 @@
         <!-- /.container -->
     </footer>
 {% endblock %}
-
-
-
